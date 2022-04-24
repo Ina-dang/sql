@@ -63,6 +63,8 @@ BEGIN
 END;
 / 
 
+
+
 EXEC PROC_TEST('HARI3');
 
 SELECT * FROM employees ORDER BY employee_id desc;
@@ -125,6 +127,9 @@ BEGIN
     END IF;
 END;
 /
+
+SET SERVEROUTPUT ON;
+SET TIMING ON;
 
 DECLARE
     vn_salary NUMBER := 0;

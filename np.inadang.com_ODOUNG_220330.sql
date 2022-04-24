@@ -157,7 +157,6 @@ BEGIN
     WHERE WRITER = P_ID;
 --  È¸¿ø
     DELETE TBL_MEMBER WHERE ID = P_ID;
-    
     COMMIT;
 END;
 /
@@ -173,4 +172,7 @@ ROLLBACK TO S1;
 
 ROLLBACK;
 COMMIT;
+/
+
+
 
